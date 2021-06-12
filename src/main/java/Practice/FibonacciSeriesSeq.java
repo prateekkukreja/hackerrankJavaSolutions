@@ -3,7 +3,7 @@ package Practice;
 import java.util.Arrays;
 //import java.util.Scanner;
 
-public class FibonacciSeriesNewSeq {
+public class FibonacciSeriesSeq {
 
     public static void main(String[] args) {
         //Scanner code for input
@@ -17,7 +17,7 @@ public class FibonacciSeriesNewSeq {
             for (int i = 0; i < n; i++) {
                 arr[i] = fibonacci(i + 1);
             }
-            //Print orignal fibonacci series
+            //Print original fibonacci series
 //            System.out.println(Arrays.toString(arr));
 
             int[] arrNew = new int[arr.length];
