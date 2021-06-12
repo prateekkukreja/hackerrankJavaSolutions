@@ -1,4 +1,4 @@
-package Practice;
+package JavaPrograms;
 
 import java.util.Arrays;
 //import java.util.Scanner;

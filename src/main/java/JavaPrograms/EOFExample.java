@@ -1,8 +1,6 @@
-package Practice;
+package JavaPrograms;
 
 import java.util.Scanner;
-import java.io.*;
-import java.util.*;
 
 public class EOFExample {
 

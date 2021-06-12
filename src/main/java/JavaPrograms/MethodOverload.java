@@ -1,4 +1,4 @@
-package Practice;
+package JavaPrograms;
 
 public class MethodOverload {
 

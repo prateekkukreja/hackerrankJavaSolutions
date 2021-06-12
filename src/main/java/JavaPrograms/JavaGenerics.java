@@ -1,4 +1,4 @@
-package Practice;
+package JavaPrograms;
 
 import jdk.internal.org.objectweb.asm.util.Printer;
 
