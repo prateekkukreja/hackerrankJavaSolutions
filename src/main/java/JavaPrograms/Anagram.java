@@ -1,7 +1,6 @@
 package JavaPrograms;
 
 import java.util.Arrays;
-import java.util.HashMap;
 import java.util.Locale;
 
 public class Anagram {
