@@ -66,7 +66,7 @@ public class MaxCostOfLegalLaptops {
                 max = costPerDay;
             }
         }
-        System.out.println(max);
+        System.out.println("Max cost : " + max);
         return max;
     }
 }

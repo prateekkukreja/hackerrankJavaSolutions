@@ -1,7 +1,7 @@
-package LinkedList;
-
-public class Node {
-
-    int data;
-    Node next;
-}
+//package LinkedList;
+//
+//public class Node {
+//
+//    int data;
+//    Node next;
+//}

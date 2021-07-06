@@ -23,7 +23,6 @@ public class GetUniqueCharsInString {
         for (Map.Entry set : map.entrySet()) {
             System.out.print(set.getKey() + " ");
         }
-
     }
 
     static void checkOnlyOneOccurance(String s) {

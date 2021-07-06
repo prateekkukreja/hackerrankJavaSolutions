@@ -2,10 +2,20 @@ package LinkedList;
 
 public class SinglyLinkedListLargeInput {
 
+    static class Node {
+        int data;
+        Node next;
+
+        public Node(int data) {
+            this.data = data;
+            next = null;
+        }
+    }
+
     Node head;
 
     public void insert(int data) {
-        Node node = new Node();
+        Node node = new Node(data);
         node.data = data;
         node.next = null;
 
