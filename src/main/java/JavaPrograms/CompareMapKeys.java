@@ -5,7 +5,7 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
 
-public class CompareMapKeyAndValues {
+public class CompareMapKeys {
 
     static Map<LocalDate, HashMap<String, LocalDate>> map = new TreeMap<>();
 

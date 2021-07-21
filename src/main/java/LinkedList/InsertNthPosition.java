@@ -43,7 +43,6 @@ class LinkedList {
             newNode.next = head;
             head = newNode;
         } else {
-
             Node temp = new Node();
             temp = head;
             for (int i = 1; i < position - 1; i++) {

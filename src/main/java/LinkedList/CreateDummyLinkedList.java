@@ -1,25 +1,18 @@
 package LinkedList;
-
 public class CreateDummyLinkedList {
-
     class Node {
-
         int data;
         Node next;
-
         Node(int data) {
             this.data = data;
         }
     }
-
     Node head;
-
     public void addElement(int data) {
 
         Node node = new Node(data);
         node.data = data;
         node.next = null;
-
         if (head == null) {
             head = node;
         } else {
@@ -30,7 +23,6 @@ public class CreateDummyLinkedList {
             n.next = node;
         }
     }
-
     public void printList() {
         Node n = head;
         while (n.next != null) {
