@@ -1,17 +1,17 @@
-package Serialization;
+package main.java.Serialization;
 
 import java.io.*;
 
-public class SampleTest extends BaseTest {
+public class SampleTest extends Serialization.BaseTest {
 
     public static void main(String[] args) {
 
         temp1();
-        NewBaseTest.temp();
-        NewBaseTest1.temp();
+        Serialization.NewBaseTest.temp();
+        Serialization.NewBaseTest1.temp();
 
 
-        Person p = new Person("kooxy", 33);
+        Serialization.Person p = new Serialization.Person("kooxy", 33);
 
         try {
             writeToFile(p);
@@ -28,14 +28,14 @@ public class SampleTest extends BaseTest {
         }
     }
 
-    public static void writeToFile(Person p) throws IOException {
+    public static void writeToFile(Serialization.Person p) throws IOException {
         ObjectOutputStream outstream = new ObjectOutputStream(new FileOutputStream("Person.txt"));
         outstream.writeObject(p);
     }
 
     public static void readFile() throws IOException, ClassNotFoundException {
         ObjectInputStream instream = new ObjectInputStream(new FileInputStream("Person.txt"));
-        Person get = (Person) instream.readObject();
+        Serialization.Person get = (Serialization.Person) instream.readObject();
         System.out.println(get);
     }
 }

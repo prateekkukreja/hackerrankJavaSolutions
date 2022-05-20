@@ -1,4 +1,5 @@
-import java.util.List;
+package JavaPrograms;
+
 import java.util.Scanner;
 
 public class SpotNana {
@@ -77,8 +78,7 @@ public class SpotNana {
 }
 
 
-
-List<String> list = //div[@class='w3-white w3-padding notranslate w3-padding-16']//table[@id= 'customers']//tbody//tr
+//        List<String> list= //div[@class='w3-white w3-padding notranslate w3-padding-16']//table[@id= 'customers']//tbody//tr
 //th = list.get(0);
 
 //tr[td[.='2'] and td[]]

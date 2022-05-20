@@ -1,4 +1,4 @@
-package LinkedList;
+package main.java.LinkedList;
 
 // Click on Run Code button to see the result
 

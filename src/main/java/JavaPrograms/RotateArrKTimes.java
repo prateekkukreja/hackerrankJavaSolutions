@@ -1,4 +1,4 @@
-package JavaPrograms;
+package main.java.JavaPrograms;
 
 import java.util.Scanner;
 
@@ -20,7 +20,7 @@ public class RotateArrKTimes {
             if (i < k) {
                 System.out.println(arr[arr.length + i - k] + " ");
             } else {
-                System.out.println(arr[i + k] + " ");
+                System.out.println(arr[i - k] + " ");
             }
         }
 

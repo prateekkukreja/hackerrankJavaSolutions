@@ -1,4 +1,4 @@
-package JavaPrograms;
+package main.java.JavaPrograms;
 
 public class MethodOverload {
 

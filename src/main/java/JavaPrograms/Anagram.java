@@ -1,4 +1,4 @@
-package JavaPrograms;
+package main.java.JavaPrograms;
 
 import java.util.Arrays;
 import java.util.Locale;
@@ -10,7 +10,7 @@ public class Anagram {
     public static void main(String[] args) {
 
         String a = "Hello".toLowerCase(Locale.ROOT);
-        String b = "hello".toLowerCase(Locale.ROOT);
+        String b = "hellP".toLowerCase(Locale.ROOT);
 
         char[] arr1 = a.toCharArray();
         char[] arr2 = b.toCharArray();
@@ -24,28 +24,21 @@ public class Anagram {
     }
 
     public static boolean checkAnagramsWithoutJavaUtils(String a, String b) {
-        boolean flag = false;
+
         if (a.length() != b.length()) {
             return false;
         }
 
         int sum = 0;
-        for (int c = 'a'; c < 'z'; c++) {
-            for (int i = 0; i < a.length(); i++) {
-                if (a.charAt(i) == c) {
-                    sum++;
-                }
-                if (b.charAt(i) == c) {
-                    sum--;
-                }
-                if (sum != 0) {
-                    return false;
-                }
-            }
-            return true;
+        int sum1 = 0;
+        for (int i = 0; i < a.length(); i++) {
+            sum += a.charAt(i) - 'a';
+            sum1 += b.charAt(i) - 'a';
         }
-
-        return flag;
+        if (sum != sum1) {
+            return false;
+        }
+        return true;
     }
 
     public static void checkAnagramsWithJavaUtils(char[] arr1, char[] arr2) {

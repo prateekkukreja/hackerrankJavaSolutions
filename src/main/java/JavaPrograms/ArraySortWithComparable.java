@@ -1,4 +1,4 @@
-package JavaPrograms;
+package main.java.JavaPrograms;
 
 import java.util.*;
 
@@ -31,6 +31,7 @@ class Student {
 public class ArraySortWithComparable {
 
     public static void main(String[] args) {
+
         Scanner in = new Scanner(System.in);
         System.out.println("Enter number of test cases : ");
         int testCases = Integer.parseInt(in.nextLine());

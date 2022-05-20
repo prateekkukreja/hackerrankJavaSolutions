@@ -1,4 +1,4 @@
-package HashMapInternal;
+package main.java.HashMapInternal;
 
 public class Employee {
 

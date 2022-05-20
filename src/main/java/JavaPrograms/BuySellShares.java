@@ -1,4 +1,4 @@
-package JavaPrograms;
+package main.java.JavaPrograms;
 
 public class BuySellShares {
 
@@ -12,6 +12,7 @@ public class BuySellShares {
         int n = arr.length;
         System.out.println(maxProfit(arr, 0, n - 1));
 //        System.out.println(bestSolution(arr));
+//        System.out.println(testSolution(arr, n));
     }
 
     public static int bruteForce(int[] arr) {
@@ -35,8 +36,7 @@ public class BuySellShares {
     static int maxProfit(int price[], int start, int end) {
 
         // If the stocks can't be bought
-        if (end <= start)
-            return 0;
+        if (end <= start) return 0;
 
         // Initialise the profit
         int profit = 0;
@@ -54,9 +54,7 @@ public class BuySellShares {
                 if (price[j] > price[i]) {
 
                     // Update the current profit
-                    int curr_profit = price[j] - price[i]
-                            + maxProfit(price, start, i - 1)
-                            + maxProfit(price, j + 1, end);
+                    int curr_profit = price[j] - price[i] + maxProfit(price, start, i - 1) + maxProfit(price, j + 1, end);
                     System.out.println(curr_profit);
                     // Update the maximum profit so far
                     profit = Math.max(profit, curr_profit);
@@ -79,6 +77,19 @@ public class BuySellShares {
         }
 
         return maxProfit;
+    }
+
+    static int testSolution(int[] arr, int n) {
+
+        int first = arr[0];
+        int max = 0;
+
+        for (int i = 1; i < n; i++) {
+            if (arr[i] > arr[i - 1]) {
+                max = max + (arr[i] - arr[i - 1]);
+            }
+        }
+        return max;
     }
 
 }
