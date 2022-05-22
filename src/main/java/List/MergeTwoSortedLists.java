@@ -22,7 +22,7 @@ public class MergeTwoSortedLists {
 
         if (inp1.size() > inp2.size()) {
             n = inp2.size();
-            flag = true;       // if list1 is bigger
+            flag = true;            // if list1 is bigger
         } else {
             n = inp1.size();         // if list2 is bigger
         }
