@@ -6,7 +6,7 @@ import java.util.stream.Stream;
 
 public class MergeTwoSortedLists {
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
 
         List<Integer> inp1 = new ArrayList<>(Arrays.asList(1, 3, 7, 9, 11));
         List<Integer> inp2 = new ArrayList<>(Arrays.asList(2, 4, 6, 8, 10, 12, 14, 16));
@@ -14,7 +14,7 @@ public class MergeTwoSortedLists {
         System.out.println(mergeLists(inp1, inp2));
     }
 
-    private static List<Integer> mergeLists(List<Integer> inp1, List<Integer> inp2) throws Exception {
+    private static List<Integer> mergeLists(List<Integer> inp1, List<Integer> inp2) {
 
         List<Integer> integerList = new ArrayList<>();
         int n = 0;
@@ -60,7 +60,7 @@ public class MergeTwoSortedLists {
         List<Integer> finalList = Stream.concat(integerList.stream(), newList.stream())
                 .collect(Collectors.toList());
 
-        return integerList;
+        return finalList;
     }
 }
 
